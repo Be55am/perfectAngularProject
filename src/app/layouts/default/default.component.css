@@ -1,0 +1,14 @@
+/*:host to select the hosting component for this component*/
+:host{
+  /*display flex and flex-direction collumn to make the elements from top to buttom */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+mat-drawer{
+  width: 350px;
+}
+
+mat-drawer-container{
+  height: 100%;
+}
