@@ -1,15 +1,14 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
     <!--  menu button-->
-    <button mat-icon-button>
+    <button (click)="OnToggleSideBar()" mat-icon-button>
       <mat-icon>menu</mat-icon>
     </button>
     <!-- end menu button-->
-
     <!--Logo-->
     <span>App Logo</span>
     <!--End Logo-->
-    <!--right menu-->
+    <!--right div-->
     <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
       <ul fxLayout="row" fxLayoutGap="20px">
         <li>
@@ -22,6 +21,7 @@
             <mat-icon>help</mat-icon>
           </button>
         </li>
+        <!--Profile Menu-->
         <li>
           <button mat-button [matMenuTriggerFor]="menu">
             <mat-icon>person_outline</mat-icon>
@@ -33,8 +33,9 @@
             </button>
           </mat-menu>
         </li>
+        <!-- End Profile  Menu-->
       </ul>
     </div>
-
+    <!-- End right Div-->
   </mat-toolbar-row>
 </mat-toolbar>

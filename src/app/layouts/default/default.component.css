@@ -1,6 +1,6 @@
 /*:host to select the hosting component for this component*/
 :host{
-  /*display flex and flex-direction collumn to make the elements from top to buttom */
+  /*display flex and flex-direction column to make the elements from top to buttom */
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -11,4 +11,8 @@ mat-drawer{
 
 mat-drawer-container{
   height: 100%;
+}
+
+mat-drawer-content{
+  padding: 20px;
 }

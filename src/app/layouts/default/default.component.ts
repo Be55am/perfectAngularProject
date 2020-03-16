@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-default',
@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DefaultComponent implements OnInit {
 
-  constructor() { }
+  sidebarOpened = true;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
+  }
+
+  OnToggleSideBar(event) {
+    this.sidebarOpened = !this.sidebarOpened;
+    console.log(this.sidebarOpened);
   }
 
 }

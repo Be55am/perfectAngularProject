@@ -1,8 +1,9 @@
-<app-header></app-header>
+<app-header (toggleSideBar)="OnToggleSideBar($event)"></app-header>
+
 <!--Mat drawer container to use the material side bar-->
 <!-- https://material.angular.io/components/sidenav/overview -->
 <mat-drawer-container>
-  <mat-drawer mode="side" opened>
+  <mat-drawer mode="side" [opened]="sidebarOpened">
     <app-sidebar></app-sidebar>
   </mat-drawer>
   <mat-drawer-content>
