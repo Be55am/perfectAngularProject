@@ -7,6 +7,8 @@ import {PostsComponent} from '../../modules/posts/posts.component';
 import {SharedModule} from '../../shared/shared.module';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatDividerModule} from '@angular/material/divider';
+import {FlexModule} from '@angular/flex-layout';
+import {MatCardModule} from '@angular/material/card';
 
 
 
@@ -22,6 +24,8 @@ import {MatDividerModule} from '@angular/material/divider';
     SharedModule,
     MatSidenavModule,
     MatDividerModule,
+    FlexModule,
+    MatCardModule,
   ]
 })
 export class DefaultModule { }
